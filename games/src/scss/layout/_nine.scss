@@ -1,0 +1,203 @@
+@import '../abstract/constants';
+.nine-navigation {
+  width: calc(100vw - 20px);
+}
+
+.navigation-buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nine-navigation__wrapper {
+  margin: auto;
+  height: 100%;
+  width: calc(100vw - 20px);
+  background-color: $color-dark;
+  @include vertical-flex();
+  justify-content: flex-start;
+}
+
+
+.nine__wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70vw;
+}
+
+.nine-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nine-setting-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nine-setting-select {
+  width: 220px;
+  color: black;
+  background-color: #8fd4e2;
+  opacity: 0.9;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="range"] {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+.battlefield {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.flip-container {
+  perspective: 1000;
+  width: 19%;
+  height: 40px;
+  margin: 5px 0;
+}
+.flipper {
+  background-color: grey;
+  font: normal normal 18px/40px Arial;
+  border: 1px solid white;
+  text-align: center;
+  margin: 5px 0;
+position: relative;
+  cursor: pointer;
+}
+
+.flipper-active {
+  transition: 0.6s;
+transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.nine-correct {
+  background-color: black;
+  border: none;
+}
+
+.front-card, 
+.back-card {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.front-card {
+z-index: 2;
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}
+
+.nine-start {
+  width: 30%;
+}
+
+.nine-result {
+  position: absolute;
+  z-index: 11;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font: normal normal 30px/40px Arial;
+}
+
+.enemies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 115px;  
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.enemy {
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  text-align: center;
+  border: 1px solid pink;
+  color: white;
+}
+
+.bot-cards {
+  background: url(../../assets/img/card-backside.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  font: normal bold 30px/85px Arial;
+  color:black;
+}
+
+.battlefield {
+  margin: 10px auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.battlefield-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 70vw;
+  justify-content: space-around;
+}
+
+.nine-card {
+  border: 1px solid pink;
+  margin: 2px;
+}
+
+.myCards {
+  margin: 10px auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nine-card-my {
+  border: 1px solid pink;
+  height: 100px;
+  margin: 2px;
+}
+
+.nine-result {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  height: 30vh;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  font: normal normal 30px/30px Arial;
+
+}
