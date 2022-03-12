@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+
+.navigator-list {
+    display: flex;
+    flex-direction: row;
+    color:white;
+    font: normal normal 25px/25px Arial;
+    list-style-type: none;
+}
+
+.navigator-list li {
+    padding: 10px 15px;
+}
