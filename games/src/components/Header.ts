@@ -24,18 +24,18 @@ class Header implements Component {
     });
     const view = `
     <div class="wrapper header__wrapper ${this.class ? this.class : ''}">
-      <a href="/#" class="instead-of-logo">A.T.</a>
+      <a href="#" class="instead-of-logo">A.T.</a>
       <nav class="header__navigation">
         <ul class="navigation">
           <li>
-            <a href="/#/nine/start" class="link navigation__link" id="nine">Nine</a>
+            <a href="#/nine/start" class="link navigation__link" id="nine">Nine</a>
           </li>
           <!--<li>
-            <a href="/#/audio_challenge" class="link navigation__link" id="audio_challenge"
+            <a href="#/audio_challenge" class="link navigation__link" id="audio_challenge"
               >Audio challenge</a
             >
           </li>
-          <li><a href="/#/sprint" class="link navigation__link" id="sprint">Sprint</a></li> -->
+          <li><a href="#/sprint" class="link navigation__link" id="sprint">Sprint</a></li> -->
         </ul>
       </nav>
       ${authorizationButton}

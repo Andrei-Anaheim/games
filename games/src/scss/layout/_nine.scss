@@ -147,7 +147,7 @@ z-index: 2;
 }
 
 .bot-cards {
-  background: url(../../assets/img/card-backside.jpg);
+  background: url('../../assets/img/card-backside.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
@@ -199,5 +199,13 @@ z-index: 2;
   background: rgba(255, 255, 255, 0.9);
   color: black;
   font: normal normal 30px/30px Arial;
+}
 
+@for $i from 0 through 51 {
+    .photo#{$i} {
+      background: url('../../assets/img/#{$i}.png');
+      background-size: cover;
+      border: 1px solid pink;
+      margin: 2px;
+    }
 }
