@@ -57,7 +57,13 @@ class twoZeroFourEight implements Page {
   }
 
   private endGame(): void {
+    let result = 0;
+    for (let i=0; i<this.array2048.length; i+=1) {
+      result += Number(this.array2048[i]);
+    }
+    (document.getElementById('result2048') as HTMLElement).innerHTML = `<p class="winner2048">Игра окончена.<br>Ваш результат: ${result}</p><div class="button" id="new2048game">Новая игра</div>`;
     (document.getElementById('result2048') as HTMLElement).setAttribute('style', 'disply: flex');
+    (document.getElementById('new2048game') as HTMLElement).addEventListener('click', ()=>window.location.reload());
   }
 
   private get2048(): void {
