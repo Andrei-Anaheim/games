@@ -7,6 +7,7 @@ import Nine from '../pages/Nine';
 import Header from '../Header';
 import Footer from '../Footer';
 import twoZeroFourEight from '../pages/2048';
+import Battleships from '../pages/Battleships';
 
 export interface Request {
   resource: string;
@@ -18,6 +19,7 @@ const routes: Record<string, Page> = {
   '/': new Home(),
   '/nine/:id': new Nine(),
   '/2048': new twoZeroFourEight(),
+  '/battleships': new Battleships(),
 };
 const errorPage: Error404 = new Error404();
 

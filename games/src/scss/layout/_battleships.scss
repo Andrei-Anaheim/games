@@ -1,0 +1,96 @@
+@import '../abstract/constants';
+
+* {
+  box-sizing: border-box;
+}
+
+.battleships_wrapper {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.battlefield_options{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.myBattleField, .enemyBattleField {
+  margin: 0 auto;
+}
+
+.center{
+  width: 200px;
+  margin: auto 0;
+}
+
+.game_result {
+  font: normal normal 30px/40px Arial;
+  text-align: center;
+}
+
+.newBattle {
+  height: 80px;
+  width: 200px;
+  margin: auto 0;
+}
+
+.startBattle {
+  height: 50px;
+  width: 200px;
+  margin: auto 0;
+}
+
+table {
+  border: 3px solid pink;
+  font: normal normal 20px/40px Arial;
+
+  
+}
+
+tr {
+  height: 40px;
+}
+
+td {  
+  position: relative;
+  text-align: center;
+  border: 1px solid white;
+  width: 40px;
+}
+
+.full {
+  background-color: lightblue;
+}
+
+table td.fire::before {
+  position: absolute;
+  content: "";
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+   background-image: linear-gradient(to bottom left,  transparent calc(50% - 1px), red, transparent calc(50% + 1px)); 
+}
+
+table td.fire::after {
+  position: absolute;
+  content: "";
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+   background-image: linear-gradient(to bottom right,  transparent calc(50% - 1px), red, transparent calc(50% + 1px)); 
+}
+
+table td.miss::before {
+  position: absolute;
+  content: ".";
+  left: 15px;
+  top: -10px;
+  font: normal normal 40px/40px Arial;
+}

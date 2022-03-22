@@ -33,6 +33,9 @@ class Header implements Component {
           <li>
             <a href="#/2048" class="link navigation__link" id="2048">2048</a>
           </li>
+          <li>
+            <a href="#/battleships" class="link navigation__link" id="battleships">Battleships</a>
+          </li>
           <!--<li>
             <a href="#/audio_challenge" class="link navigation__link" id="audio_challenge"
               >Audio challenge</a
